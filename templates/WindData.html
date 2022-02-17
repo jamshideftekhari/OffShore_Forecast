@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<body>
+
+<h1>Wind Data</h1>
+<p>Daily wind directions and speed.</p>
+
+<table>
+    <thead><tr><th>Timestamp</th><th>Wind Speed</th><th>Wind direction</th></tr></thead>
+    <tbody>
+        {% for wind in winddata%}
+           <tr><td>{{wind.TimeStamp}}</td><td style="text-align: center;">{{wind.WindSpeed}}</td><td style="text-align: center;">{{wind.WindDirection}}</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html
